@@ -1865,68 +1865,150 @@
 
                 
                 <!-- 3D Design Section -->
-                <section class="mt-16 w-full">
-                    <div class="w-full flex justify-start mb-2">
-                        <h1 class="text-2xl font-bold uppercase tracking-wider text-white bg-opacity-80 px-4 py-2 rounded-lg shadow-lg" style="background: none;">3D Design</h1>
+                <section class="w-full py-16 md:py-24 bg-gray-900 relative overflow-hidden" id="3d-design-section">
+    
+                    <div class="absolute inset-0 bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] bg-[size:30px_30px] pointer-events-none"></div>
+                    <div class="absolute top-0 right-0 w-[600px] h-[600px] bg-cyan-600/10 rounded-full blur-[120px] pointer-events-none"></div>
+                    <div class="absolute bottom-0 left-0 w-[600px] h-[600px] bg-fuchsia-600/10 rounded-full blur-[120px] pointer-events-none"></div>
+                
+                    <div class="container mx-auto max-w-7xl relative z-10 px-4">
+                        
+                        <div class="text-center mb-12 md:mb-16">
+                            <div class="flex items-center justify-center gap-2 mb-3">
+                                <i class="bi bi-box-seam text-cyan-400 text-lg"></i>
+                                <span class="text-cyan-400 font-bold tracking-[0.2em] text-xs uppercase">Digital Sculpting</span>
+                            </div>
+                            <h2 class="text-3xl md:text-6xl font-extrabold text-white uppercase tracking-tight">
+                                3D <span class="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-fuchsia-500">Design</span>
+                            </h2>
+                            <div class="h-1 w-24 bg-gradient-to-r from-cyan-400 to-fuchsia-500 mx-auto mt-4 rounded-full shadow-[0_0_15px_rgba(34,211,238,0.5)]"></div>
+                        </div>
+                
+                        <div class="columns-2 md:columns-3 lg:columns-4 gap-4 space-y-4">
+                            
+                            <div class="break-inside-avoid relative group rounded-xl overflow-hidden border border-white/5 bg-gray-800 cursor-zoom-in" onclick="open3DModal(this)">
+                                <div class="absolute inset-0 bg-cyan-500/0 group-hover:bg-cyan-500/20 transition-all duration-300 z-10 flex items-center justify-center">
+                                    <i class="bi bi-box text-white text-3xl opacity-0 group-hover:opacity-100 transform scale-50 group-hover:scale-100 transition-all duration-300 drop-shadow-[0_0_10px_rgba(0,255,255,0.8)]"></i>
+                                </div>
+                                <img src="./3d/1.png" alt="3D Design" class="w-full h-auto object-cover transform group-hover:scale-110 transition-transform duration-700">
+                            </div>
+                            <div class="break-inside-avoid relative group rounded-xl overflow-hidden border border-white/5 bg-gray-800 cursor-zoom-in" onclick="open3DModal(this)">
+                                <div class="absolute inset-0 bg-fuchsia-500/0 group-hover:bg-fuchsia-500/20 transition-all duration-300 z-10 flex items-center justify-center">
+                                    <i class="bi bi-box text-white text-3xl opacity-0 group-hover:opacity-100 transform scale-50 group-hover:scale-100 transition-all duration-300"></i>
+                                </div>
+                                <img src="./3d/2.png" alt="3D Design" class="w-full h-auto object-cover transform group-hover:scale-110 transition-transform duration-700">
+                            </div>
+                            <div class="break-inside-avoid relative group rounded-xl overflow-hidden border border-white/5 bg-gray-800 cursor-zoom-in" onclick="open3DModal(this)">
+                                 <div class="absolute inset-0 bg-cyan-500/0 group-hover:bg-cyan-500/20 transition-all duration-300 z-10 flex items-center justify-center">
+                                    <i class="bi bi-box text-white text-3xl opacity-0 group-hover:opacity-100 transform scale-50 group-hover:scale-100 transition-all duration-300"></i>
+                                </div>
+                                <img src="./3d/3.png" alt="3D Design" class="w-full h-auto object-cover transform group-hover:scale-110 transition-transform duration-700">
+                            </div>
+                            <div class="break-inside-avoid relative group rounded-xl overflow-hidden border border-white/5 bg-gray-800 cursor-zoom-in" onclick="open3DModal(this)">
+                                <div class="absolute inset-0 bg-fuchsia-500/0 group-hover:bg-fuchsia-500/20 transition-all duration-300 z-10 flex items-center justify-center">
+                                   <i class="bi bi-box text-white text-3xl opacity-0 group-hover:opacity-100 transform scale-50 group-hover:scale-100 transition-all duration-300"></i>
+                               </div>
+                               <img src="./3d/4.png" alt="3D Design" class="w-full h-auto object-cover transform group-hover:scale-110 transition-transform duration-700">
+                           </div>
+                           <div class="break-inside-avoid relative group rounded-xl overflow-hidden border border-white/5 bg-gray-800 cursor-zoom-in" onclick="open3DModal(this)">
+                                <div class="absolute inset-0 bg-cyan-500/0 group-hover:bg-cyan-500/20 transition-all duration-300 z-10 flex items-center justify-center">
+                                    <i class="bi bi-box text-white text-3xl opacity-0 group-hover:opacity-100 transform scale-50 group-hover:scale-100 transition-all duration-300"></i>
+                                </div>
+                                <img src="./3d/5.png" alt="3D Design" class="w-full h-auto object-cover transform group-hover:scale-110 transition-transform duration-700">
+                            </div>
+                            <div class="break-inside-avoid relative group rounded-xl overflow-hidden border border-white/5 bg-gray-800 cursor-zoom-in" onclick="open3DModal(this)">
+                                <div class="absolute inset-0 bg-fuchsia-500/0 group-hover:bg-fuchsia-500/20 transition-all duration-300 z-10 flex items-center justify-center">
+                                    <i class="bi bi-box text-white text-3xl opacity-0 group-hover:opacity-100 transform scale-50 group-hover:scale-100 transition-all duration-300"></i>
+                                </div>
+                                <img src="./3d/6.png" alt="3D Design" class="w-full h-auto object-cover transform group-hover:scale-110 transition-transform duration-700">
+                            </div>
+                            <div class="break-inside-avoid relative group rounded-xl overflow-hidden border border-white/5 bg-gray-800 cursor-zoom-in" onclick="open3DModal(this)">
+                                 <div class="absolute inset-0 bg-cyan-500/0 group-hover:bg-cyan-500/20 transition-all duration-300 z-10 flex items-center justify-center">
+                                    <i class="bi bi-box text-white text-3xl opacity-0 group-hover:opacity-100 transform scale-50 group-hover:scale-100 transition-all duration-300"></i>
+                                </div>
+                                <img src="./3d/7.png" alt="3D Design" class="w-full h-auto object-cover transform group-hover:scale-110 transition-transform duration-700">
+                            </div>
+                            <div class="break-inside-avoid relative group rounded-xl overflow-hidden border border-white/5 bg-gray-800 cursor-zoom-in" onclick="open3DModal(this)">
+                                <div class="absolute inset-0 bg-fuchsia-500/0 group-hover:bg-fuchsia-500/20 transition-all duration-300 z-10 flex items-center justify-center">
+                                   <i class="bi bi-box text-white text-3xl opacity-0 group-hover:opacity-100 transform scale-50 group-hover:scale-100 transition-all duration-300"></i>
+                               </div>
+                               <img src="./3d/8.png" alt="3D Design" class="w-full h-auto object-cover transform group-hover:scale-110 transition-transform duration-700">
+                           </div>
+                           <div class="break-inside-avoid relative group rounded-xl overflow-hidden border border-white/5 bg-gray-800 cursor-zoom-in" onclick="open3DModal(this)">
+                                <div class="absolute inset-0 bg-cyan-500/0 group-hover:bg-cyan-500/20 transition-all duration-300 z-10 flex items-center justify-center">
+                                    <i class="bi bi-box text-white text-3xl opacity-0 group-hover:opacity-100 transform scale-50 group-hover:scale-100 transition-all duration-300"></i>
+                                </div>
+                                <img src="./3d/9.png" alt="3D Design" class="w-full h-auto object-cover transform group-hover:scale-110 transition-transform duration-700">
+                            </div>
+                
+                            <script>
+                                // Simple script to generate the rest of the images (10 to 34) to save space and keep code clean
+                                // You can replace this script with manual HTML if you prefer
+                                for (let i = 10; i <= 34; i++) {
+                                    document.write(`
+                                        <div class="break-inside-avoid relative group rounded-xl overflow-hidden border border-white/5 bg-gray-800 cursor-zoom-in" onclick="open3DModal(this)">
+                                            <div class="absolute inset-0 bg-${i % 2 === 0 ? 'cyan' : 'fuchsia'}-500/0 group-hover:bg-${i % 2 === 0 ? 'cyan' : 'fuchsia'}-500/20 transition-all duration-300 z-10 flex items-center justify-center">
+                                                <i class="bi bi-box text-white text-3xl opacity-0 group-hover:opacity-100 transform scale-50 group-hover:scale-100 transition-all duration-300 drop-shadow-lg"></i>
+                                            </div>
+                                            <img src="./3d/${i}.jpeg" alt="3D Design ${i}" class="w-full h-auto object-cover transform group-hover:scale-110 transition-transform duration-700">
+                                        </div>
+                                    `);
+                                }
+                            </script>
+                            
+                            </div>
+                
                     </div>
-                    <div class="relative w-full flex flex-row gap-8 items-center justify-center">
-                        <img src="./3d/1.png" alt="3D Design 1" class="h-auto max-w-xs rounded-2xl shadow-2xl object-contain mb-8" />
-                        <img src="./3d/2.png" alt="3D Design 2" class="h-auto max-w-xs rounded-2xl shadow-2xl object-contain mb-8" />
-                        <img src="./3d/3.png" alt="3D Design 3" class="h-auto max-w-xs rounded-2xl shadow-2xl object-contain mb-8" />
+                
+                    <div id="3d-modal" class="fixed inset-0 z-[9999] hidden items-center justify-center p-0 bg-black/95 backdrop-blur-md opacity-0 transition-opacity duration-300" onclick="close3DModal()">
+                        
+                        <button class="absolute top-4 right-4 md:top-6 md:right-6 z-[100] w-12 h-12 flex items-center justify-center rounded-full bg-gray-800/80 text-white border border-white/20 hover:bg-cyan-600 hover:border-cyan-500 transition-all shadow-lg cursor-pointer">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                            </svg>
+                        </button>
+                
+                        <div class="relative w-full h-full flex items-center justify-center p-2 md:p-4">
+                            <img src="" class="max-w-[95vw] md:max-w-full max-h-[90vh] md:max-h-full object-contain rounded-lg shadow-2xl scale-95 transition-transform duration-300 border border-white/5" id="3d-full-img">
+                        </div>
                     </div>
-                    <div class="relative w-full flex flex-row gap-8 items-center justify-center">
-                        <img src="./3d/4.png" alt="3D Design 1" class="h-auto max-w-xs rounded-2xl shadow-2xl object-contain mb-8" />
-                        <img src="./3d/5.png" alt="3D Design 2" class="h-auto max-w-xs rounded-2xl shadow-2xl object-contain mb-8" />
-                        <img src="./3d/6.png" alt="3D Design 3" class="h-auto max-w-xs rounded-2xl shadow-2xl object-contain mb-8" />
-                    </div>
-                    <div class="relative w-full flex flex-row gap-8 items-center justify-center">
-                        <img src="./3d/7.png" alt="3D Design 1" class="h-auto max-w-xs rounded-2xl shadow-2xl object-contain mb-8" />
-                        <img src="./3d/8.png" alt="3D Design 2" class="h-auto max-w-xs rounded-2xl shadow-2xl object-contain mb-8" />
-                        <img src="./3d/9.png" alt="3D Design 3" class="h-auto max-w-xs rounded-2xl shadow-2xl object-contain mb-8" />
-                    </div>
-                    <div class="relative w-full flex flex-row gap-8 items-center justify-center">
-                        <img src="./3d/10.jpeg" alt="3D Design 10" class="h-auto max-w-xs rounded-2xl shadow-2xl object-contain mb-8" />
-                        <img src="./3d/11.jpeg" alt="3D Design 11" class="h-auto max-w-xs rounded-2xl shadow-2xl object-contain mb-8" />
-                        <img src="./3d/12.jpeg" alt="3D Design 12" class="h-auto max-w-xs rounded-2xl shadow-2xl object-contain mb-8" />
-                    </div>
-                    <div class="relative w-full flex flex-row gap-8 items-center justify-center">
-                        <img src="./3d/13.jpeg" alt="3D Design 13" class="h-auto max-w-xs rounded-2xl shadow-2xl object-contain mb-8" />
-                        <img src="./3d/14.jpeg" alt="3D Design 14" class="h-auto max-w-xs rounded-2xl shadow-2xl object-contain mb-8" />
-                        <img src="./3d/15.jpeg" alt="3D Design 15" class="h-auto max-w-xs rounded-2xl shadow-2xl object-contain mb-8" />
-                    </div>
-                    <div class="relative w-full flex flex-row gap-8 items-center justify-center">
-                        <img src="./3d/16.jpeg" alt="3D Design 16" class="h-auto max-w-xs rounded-2xl shadow-2xl object-contain mb-8" />
-                        <img src="./3d/17.jpeg" alt="3D Design 17" class="h-auto max-w-xs rounded-2xl shadow-2xl object-contain mb-8" />
-                        <img src="./3d/18.jpeg" alt="3D Design 18" class="h-auto max-w-xs rounded-2xl shadow-2xl object-contain mb-8" />
-                    </div>
-                    <div class="relative w-full flex flex-row gap-8 items-center justify-center">
-                        <img src="./3d/19.jpeg" alt="3D Design 19" class="h-auto max-w-xs rounded-2xl shadow-2xl object-contain mb-8" />
-                        <img src="./3d/20.jpeg" alt="3D Design 20" class="h-auto max-w-xs rounded-2xl shadow-2xl object-contain mb-8" />
-                        <img src="./3d/21.jpeg" alt="3D Design 21" class="h-auto max-w-xs rounded-2xl shadow-2xl object-contain mb-8" />
-                    </div>
-                    <div class="relative w-full flex flex-row gap-8 items-center justify-center">
-                        <img src="./3d/22.jpeg" alt="3D Design 22" class="h-auto max-w-xs rounded-2xl shadow-2xl object-contain mb-8" />
-                        <img src="./3d/23.jpeg" alt="3D Design 23" class="h-auto max-w-xs rounded-2xl shadow-2xl object-contain mb-8" />
-                        <img src="./3d/24.jpeg" alt="3D Design 24" class="h-auto max-w-xs rounded-2xl shadow-2xl object-contain mb-8" />
-                    </div>
-                    <div class="relative w-full flex flex-row gap-8 items-center justify-center">
-                        <img src="./3d/25.jpeg" alt="3D Design 25" class="h-auto max-w-xs rounded-2xl shadow-2xl object-contain mb-8" />
-                        <img src="./3d/26.jpeg" alt="3D Design 26" class="h-auto max-w-xs rounded-2xl shadow-2xl object-contain mb-8" />
-                        <img src="./3d/27.jpeg" alt="3D Design 27" class="h-auto max-w-xs rounded-2xl shadow-2xl object-contain mb-8" />
-                    </div>
-                    <div class="relative w-full flex flex-row gap-8 items-center justify-center">
-                        <img src="./3d/28.jpeg" alt="3D Design 28" class="h-auto max-w-xs rounded-2xl shadow-2xl object-contain mb-8" />
-                        <img src="./3d/29.jpeg" alt="3D Design 29" class="h-auto max-w-xs rounded-2xl shadow-2xl object-contain mb-8" />
-                        <img src="./3d/30.jpeg" alt="3D Design 30" class="h-auto max-w-xs rounded-2xl shadow-2xl object-contain mb-8" />
-                    </div>
-                    <div class="relative w-full flex flex-row gap-8 items-center justify-center">
-                        <img src="./3d/31.jpeg" alt="3D Design 31" class="h-auto max-w-xs rounded-2xl shadow-2xl object-contain mb-8" />
-                        <img src="./3d/32.jpeg" alt="3D Design 32" class="h-auto max-w-xs rounded-2xl shadow-2xl object-contain mb-8" />
-                        <img src="./3d/33.jpeg" alt="3D Design 33" class="h-auto max-w-xs rounded-2xl shadow-2xl object-contain mb-8" />
-                    </div>
-                    <div class="relative w-full flex flex-row gap-8 items-center justify-center">
-                        <img src="./3d/34.jpeg" alt="3D Design 34" class="h-auto max-w-xs rounded-2xl shadow-2xl object-contain mb-8" />
-                    </div>
+                
+                    <script>
+                        const d3Modal = document.getElementById('3d-modal');
+                        const d3FullImg = document.getElementById('3d-full-img');
+                
+                        function open3DModal(element) {
+                            const img = element.querySelector('img');
+                            if (img) {
+                                d3FullImg.src = img.src;
+                                d3Modal.classList.remove('hidden');
+                                setTimeout(() => {
+                                    d3Modal.classList.remove('opacity-0');
+                                    d3FullImg.classList.remove('scale-95');
+                                    d3FullImg.classList.add('scale-100');
+                                }, 10);
+                                document.body.style.overflow = 'hidden';
+                            }
+                        }
+                
+                        function close3DModal() {
+                            d3Modal.classList.add('opacity-0');
+                            d3FullImg.classList.remove('scale-100');
+                            d3FullImg.classList.add('scale-95');
+                            setTimeout(() => {
+                                d3Modal.classList.add('hidden');
+                                d3FullImg.src = '';
+                                document.body.style.overflow = '';
+                            }, 300);
+                        }
+                
+                        document.addEventListener('keydown', function(e) {
+                            if (e.key === 'Escape' && !d3Modal.classList.contains('hidden')) {
+                                close3DModal();
+                            }
+                        });
+                    </script>
+                
                 </section>
 
             </div>
@@ -2139,7 +2221,7 @@
         </section>
         <!-- End Contact -->
 
-        
+
     </main>
     <!-- Footer -->
     <footer class="footer bg-gray-900 text-gray-200 border-t border-pink-600 py-10">
