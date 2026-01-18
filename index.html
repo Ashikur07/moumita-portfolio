@@ -2298,6 +2298,130 @@
     </footer>
     <!-- End Footer -->
 
+    
+    <div class="progress-wrap" id="scrollUp">
+        <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
+            <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
+        </svg>
+        <i class="bi bi-arrow-up"></i>
+    </div>
+    
+    <style>
+        /* 1. Main Container */
+        .progress-wrap {
+            position: fixed;
+            right: 30px;
+            bottom: 30px;
+            height: 50px;
+            width: 50px;
+            cursor: pointer;
+            display: flex;             /* Flexbox for centering */
+            align-items: center;       /* Vertical Center */
+            justify-content: center;   /* Horizontal Center */
+            border-radius: 50%;
+            z-index: 9999;
+            opacity: 0;
+            visibility: hidden;
+            transform: translateY(15px);
+            transition: all 200ms linear;
+            background-color: #0f172a; /* Slate Dark Background */
+            box-shadow: inset 0 0 0 2px rgba(255, 255, 255, 0.1); /* Inner subtle ring */
+        }
+    
+        /* 2. Active State */
+        .progress-wrap.active-progress {
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(0);
+        }
+    
+        /* 3. SVG Circle (FIXED POSITIONING) */
+        .progress-wrap svg.progress-circle {
+            position: absolute; /* This fixes the layout issue */
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+        }
+        
+        .progress-wrap svg.progress-circle path {
+            fill: none;
+            stroke: #f97316; /* Orange Progress Line */
+            stroke-width: 4;
+            box-sizing: border-box;
+            transition: all 200ms linear;
+        }
+    
+        /* 4. Arrow Icon (Centered on top) */
+        .progress-wrap i {
+            font-size: 24px;
+            color: #f97316; /* Orange Arrow */
+            z-index: 2; /* Sits on top of the circle */
+            line-height: 1; /* Prevents alignment shifts */
+            transition: all 200ms linear;
+        }
+    
+        /* 5. Hover Effects */
+        .progress-wrap:hover {
+            transform: translateY(-5px); 
+            box-shadow: inset 0 0 0 2px rgba(249, 115, 22, 0.4); /* Orange Glow */
+        }
+        
+        .progress-wrap:hover i {
+            color: #ffffff; /* White Arrow on Hover */
+            animation: bounce-up 1s infinite;
+        }
+    
+        /* Animation */
+        @keyframes bounce-up {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-3px); }
+        }
+    </style>
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const progressPath = document.querySelector('.progress-wrap path');
+            const pathLength = progressPath.getTotalLength();
+            
+            progressPath.style.transition = progressPath.style.WebkitTransition = 'none';
+            progressPath.style.strokeDasharray = pathLength + ' ' + pathLength;
+            progressPath.style.strokeDashoffset = pathLength;
+            progressPath.getBoundingClientRect();
+            progressPath.style.transition = progressPath.style.WebkitTransition = 'stroke-dashoffset 10ms linear';
+            
+            const updateProgress = function() {
+                const scroll = window.scrollY || window.pageYOffset;
+                const height = document.documentElement.scrollHeight - window.innerHeight;
+                const progress = pathLength - (scroll * pathLength / height);
+                progressPath.style.strokeDashoffset = progress;
+            }
+    
+            updateProgress();
+            window.addEventListener('scroll', updateProgress);
+    
+            const offset = 50;
+            const progressWrap = document.querySelector('.progress-wrap');
+            
+            window.addEventListener('scroll', function() {
+                if (window.scrollY > offset) {
+                    progressWrap.classList.add('active-progress');
+                } else {
+                    progressWrap.classList.remove('active-progress');
+                }
+            });
+    
+            progressWrap.addEventListener('click', function(event) {
+                event.preventDefault();
+                window.scrollTo({
+                    top: 0,
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+    
 
     <script src="static/js/jquery-3.5.1.min.js"></script>
     <script src="static/plugin/appear/jquery.appear.js"></script>
