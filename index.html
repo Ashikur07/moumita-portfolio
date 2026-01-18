@@ -1045,15 +1045,17 @@
                         <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-20 items-center">
                             
                             <div class="relative group order-1 lg:order-1 cursor-zoom-in" onclick="openInspirationModal()">
-                                <div class="relative rounded-2xl overflow-hidden shadow-2xl border border-gray-700/50 aspect-video lg:aspect-[4/3] w-full">
+                                <div class="relative rounded-2xl overflow-hidden shadow-2xl border border-gray-700/50 aspect-video w-full">
                                     
                                     <div class="absolute inset-0 bg-black/20 group-hover:bg-black/40 transition-colors duration-300 z-10 flex items-center justify-center">
-                                        <div class="w-16 h-16 rounded-full bg-white/10 backdrop-blur-md border border-white/20 flex items-center justify-center opacity-0 scale-50 group-hover:opacity-100 group-hover:scale-100 transition-all duration-300">
-                                            <i class="bi bi-arrows-fullscreen text-white text-2xl"></i>
+                                        <div class="w-16 h-16 rounded-full bg-white/10 backdrop-blur-md border border-white/20 flex items-center justify-center opacity-0 scale-50 group-hover:opacity-100 group-hover:scale-100 transition-all duration-300 shadow-[0_0_20px_rgba(0,0,0,0.3)]">
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                                <path stroke-linecap="round" stroke-linejoin="round" d="M4 8V4m0 0h4M4 4l5 5m11-1V4m0 0h-4m4 0l-5 5M4 16v4m0 0h4m-4 0l5-5m11 5l-5-5m5 5v-4m0 4h-4" />
+                                            </svg>
                                         </div>
                                     </div>
                 
-                                    <img src="./portfolio/art/inspiration.png" id="inspiration-thumb" alt="Inspiration" class="w-full h-full object-cover transform transition-transform duration-700 group-hover:scale-110">
+                                    <img src="./portfolio/art/inspiration.png" id="inspiration-thumb" alt="Inspiration" class="w-full h-full object-cover transform transition-transform duration-700 group-hover:scale-105">
                                 </div>
                                 
                                 <div class="absolute -z-10 top-3 -left-3 lg:top-5 lg:-left-5 w-full h-full border-2 border-pink-500/20 rounded-2xl hidden md:block transition-transform duration-500 group-hover:translate-x-2 group-hover:translate-y-2"></div>
@@ -1065,7 +1067,8 @@
                                     <div class="flex items-center justify-center lg:justify-start gap-3 mb-3">
                                         <span class="h-px w-8 lg:w-12 bg-pink-500"></span>
                                         <span class="text-pink-500 font-bold tracking-widest text-xs lg:text-sm uppercase">Creative Vision</span>
-                                        <span class="h-px w-8 lg:w-0 bg-pink-500 lg:hidden"></span> </div>
+                                        <span class="h-px w-8 lg:w-0 bg-pink-500 lg:hidden"></span>
+                                    </div>
                                     <h2 class="text-3xl md:text-5xl font-extrabold text-white uppercase tracking-wide leading-tight">
                                         Inspiration <span class="text-gray-600">|</span> <br class="hidden lg:block">
                                         <span class="text-transparent bg-clip-text bg-gradient-to-r from-pink-500 to-yellow-500">Concept</span>
@@ -1095,7 +1098,7 @@
                     </div>
                 
                     <div id="inspiration-modal" class="fixed inset-0 z-[9999] hidden items-center justify-center p-2 md:p-4 bg-black/95 backdrop-blur-md opacity-0 transition-opacity duration-300" onclick="closeInspirationModal()">
-                        
+        
                         <button class="absolute top-4 right-4 z-50 w-12 h-12 flex items-center justify-center rounded-full bg-gray-800 text-white border border-white/20 hover:bg-pink-600 transition-all shadow-lg cursor-pointer">
                             <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                                 <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
