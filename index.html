@@ -2115,109 +2115,120 @@
 
 
         <!-- Contact -->
-        <section id="contactus" data-scroll-index="5" class="section dark-bg-1 contactus-section">
-            <div class="placeholder">
-                <h5>Contact</h5>
-            </div>
-            <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-lg-6 text-center">
-                        <div class="section-title">
-                            <h2><span>Contact Me</span></h2>
+        <section class="w-full py-20 bg-[#0f172a] relative overflow-hidden flex items-center justify-center" id="contactus" data-scroll-index="5">
+    
+            <div class="absolute -top-20 -left-20 w-96 h-96 rounded-full border border-slate-700/50 opacity-50 pointer-events-none"></div>
+            <div class="absolute top-40 right-10 w-64 h-64 rounded-full border-2 border-slate-800 border-dashed opacity-50 animate-spin-slow pointer-events-none"></div>
+            <div class="absolute inset-0 bg-[radial-gradient(#cbd5e1_1px,transparent_1px)] [background-size:32px_32px] opacity-[0.03] pointer-events-none"></div>
+            <div class="absolute bottom-0 left-1/3 w-96 h-96 bg-orange-500/10 rounded-full blur-[120px] pointer-events-none"></div>
+        
+            <div class="container mx-auto max-w-5xl relative z-10 px-4">
+                
+                <div class="flex flex-col md:flex-row gap-0 shadow-2xl rounded-3xl overflow-hidden">
+                    
+                    <div class="w-full md:w-5/12 bg-slate-800 relative p-10 flex flex-col justify-between overflow-hidden group">
+                        <div class="absolute top-0 right-0 w-64 h-64 bg-gradient-to-br from-orange-500/20 to-transparent rounded-bl-full -mr-16 -mt-16 transition-transform group-hover:scale-110 duration-700"></div>
+                        
+                        <div class="relative z-10">
+                            <p class="text-orange-400 font-bold tracking-widest text-xs uppercase mb-2">Contact</p>
+                            <h2 class="text-4xl font-extrabold text-white mb-6">Let's Work <br><span class="text-slate-400">Together.</span></h2>
+                            <p class="text-slate-400 text-sm leading-relaxed mb-8">Ready to start your next project? Drop me a line and let's create something amazing.</p>
+                        </div>
+        
+                        <div class="relative z-10 space-y-6">
+                            <div class="flex items-start gap-4">
+                                <div class="w-10 h-10 rounded-full bg-slate-700/50 flex items-center justify-center text-orange-400 shrink-0">
+                                    <i class="bi bi-envelope-fill"></i>
+                                </div>
+                                <div>
+                                    <h4 class="text-white text-sm font-bold">Mail Me</h4>
+                                    <p class="text-slate-400 text-sm">mowmita.nipu14@gmail.com</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start gap-4">
+                                <div class="w-10 h-10 rounded-full bg-slate-700/50 flex items-center justify-center text-orange-400 shrink-0">
+                                    <i class="bi bi-telephone-fill"></i>
+                                </div>
+                                <div>
+                                    <h4 class="text-white text-sm font-bold">Call Me</h4>
+                                    <p class="text-slate-400 text-sm">+880 1314-557057</p>
+                                </div>
+                            </div>
+        
+                            <div class="flex items-start gap-4">
+                                <div class="w-10 h-10 rounded-full bg-slate-700/50 flex items-center justify-center text-orange-400 shrink-0">
+                                    <i class="bi bi-geo-alt-fill"></i>
+                                </div>
+                                <div>
+                                    <h4 class="text-white text-sm font-bold">Location</h4>
+                                    <p class="text-slate-400 text-sm">Mirpur-1, Dhaka, BD</p>
+                                </div>
+                            </div>
+                        </div>
+        
+                        <div class="mt-10 relative z-10">
+                            <div class="flex gap-4">
+                                <a href="#" class="text-slate-400 hover:text-white transition-colors"><i class="bi bi-facebook text-xl"></i></a>
+                                <a href="#" class="text-slate-400 hover:text-white transition-colors"><i class="bi bi-linkedin text-xl"></i></a>
+                                <a href="#" class="text-slate-400 hover:text-white transition-colors"><i class="bi bi-instagram text-xl"></i></a>
+                                <a href="#" class="text-slate-400 hover:text-white transition-colors"><i class="bi bi-whatsapp text-xl"></i></a>
+                            </div>
                         </div>
                     </div>
+        
+                    <div class="w-full md:w-7/12 bg-slate-900 p-8 md:p-12 relative border-l border-slate-700/50">
+                        
+                        <form id="contact-form" method="POST" class="space-y-6">
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                                <div class="space-y-2 group">
+                                    <label class="text-xs text-slate-400 font-bold uppercase tracking-wider ml-1 group-focus-within:text-orange-400 transition-colors">Your Name</label>
+                                    <input name="Name" type="text" placeholder="John Doe" 
+                                        class="w-full bg-slate-800/50 backdrop-blur-sm border border-slate-700/50 rounded-xl px-5 py-3.5 text-white transition-all duration-300 placeholder-slate-600 focus:bg-slate-800 focus:border-orange-500/50 focus:ring-4 focus:ring-orange-500/10 focus:outline-none shadow-inner">
+                                </div>
+                                <div class="space-y-2 group">
+                                    <label class="text-xs text-slate-400 font-bold uppercase tracking-wider ml-1 group-focus-within:text-orange-400 transition-colors">Your Email</label>
+                                    <input name="Email" type="email" placeholder="hello@example.com" 
+                                        class="w-full bg-slate-800/50 backdrop-blur-sm border border-slate-700/50 rounded-xl px-5 py-3.5 text-white transition-all duration-300 placeholder-slate-600 focus:bg-slate-800 focus:border-orange-500/50 focus:ring-4 focus:ring-orange-500/10 focus:outline-none shadow-inner">
+                                </div>
+                            </div>
+        
+                            <div class="space-y-2 group">
+                                <label class="text-xs text-slate-400 font-bold uppercase tracking-wider ml-1 group-focus-within:text-orange-400 transition-colors">Subject</label>
+                                <input name="Subject" type="text" placeholder="Project Inquiry" 
+                                    class="w-full bg-slate-800/50 backdrop-blur-sm border border-slate-700/50 rounded-xl px-5 py-3.5 text-white transition-all duration-300 placeholder-slate-600 focus:bg-slate-800 focus:border-orange-500/50 focus:ring-4 focus:ring-orange-500/10 focus:outline-none shadow-inner">
+                            </div>
+        
+                            <div class="space-y-2 group">
+                                <label class="text-xs text-slate-400 font-bold uppercase tracking-wider ml-1 group-focus-within:text-orange-400 transition-colors">Message</label>
+                                <textarea name="message" rows="4" placeholder="Tell me about your project..." 
+                                    class="w-full bg-slate-800/50 backdrop-blur-sm border border-slate-700/50 rounded-xl px-5 py-3.5 text-white transition-all duration-300 placeholder-slate-600 resize-none focus:bg-slate-800 focus:border-orange-500/50 focus:ring-4 focus:ring-orange-500/10 focus:outline-none shadow-inner"></textarea>
+                            </div>
+        
+                            <button type="submit" class="w-full md:w-auto bg-white text-slate-900 font-bold py-4 px-10 rounded-xl mt-4 hover:bg-orange-500 hover:text-white transition-all duration-300 transform hover:-translate-y-1 hover:shadow-lg hover:shadow-orange-500/20 flex items-center justify-center gap-2 group">
+                                <span>Send Message</span>
+                                <i class="bi bi-arrow-right group-hover:translate-x-1 transition-transform"></i>
+                            </button>
+        
+                            <div class="mt-4">
+                                <span id="suce_message" class="text-green-500 text-xs font-bold hidden bg-green-500/10 px-3 py-1 rounded-lg border border-green-500/20">Message Sent Successfully!</span>
+                                <span id="err_message" class="text-red-500 text-xs font-bold hidden bg-red-500/10 px-3 py-1 rounded-lg border border-red-500/20">Sending Failed.</span>
+                            </div>
+                        </form>
+                    </div>
+        
                 </div>
-                <div class="row justify-content-center">
-                    <div class="col-lg-4 my-3">
-                        <div class="contact-info">
-                            <div class="contact-name">
-                                <div class="sm-title">
-                                    <h3>Email</h3>
-                                </div>
-                                <p>mowmita.nipu14@gmail.com</p>
-                            </div>
-                            <div class="contact-name">
-                                <div class="sm-title">
-                                    <h3>Address</h3>
-                                </div>
-                                <p>Mazar road, Mirpur-1, Dhaka-1216</p>
-                            </div>
-                            <div class="contact-name">
-                                <div class="sm-title">
-                                    <h3>Phone</h3>
-                                </div>
-                                <p>+8801314557057</p>
-                            </div>
-                            <div class="social-share nav">
-                                <a href="https://www.facebook.com/mowmita.nipu.10" target="_blank" rel="noopener"
-                                    aria-label="Facebook">
-                                    <i class="bi bi-facebook"></i>
-                                </a>
-                                <a href="https://wa.me/8801314557057" target="_blank" rel="noopener"
-                                    aria-label="WhatsApp">
-                                    <i class="bi bi-whatsapp"></i>
-                                </a>
-                                <a href="https://www.instagram.com/mowmita_nipu?igsh=eWFnbTE4bXN5eHdy" target="_blank"
-                                    rel="noopener" aria-label="Instagram">
-                                    <i class="bi bi-instagram"></i>
-                                </a>
-                                <a href="https://www.linkedin.com/in/mowmita-nipu-3a0a202b3/" target="_blank"
-                                    rel="noopener" aria-label="LinkedIn">
-                                    <i class="bi bi-linkedin"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-8 my-3">
-                        <div class="contact-form">
-                            <div class="sm-title">
-                                <h3>Get In Touch</h3>
-                            </div>
-                            <form id="contact-form" method="POST">
-                                <div class="row">
-                                    <div class="col-md-6">
-                                        <div class="form-group">
-                                            <input name="Name" id="name" placeholder="Name *" class="form-control"
-                                                type="text">
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <div class="form-group">
-                                            <input name="Email" id="email" placeholder="Email *" class="form-control"
-                                                type="email">
-                                        </div>
-                                    </div>
-                                    <div class="col-12">
-                                        <div class="form-group">
-                                            <input name="Subject" id="subject" placeholder="Subject *"
-                                                class="form-control" type="text">
-                                        </div>
-                                    </div>
-                                    <div class="col-md-12">
-                                        <div class="form-group">
-                                            <textarea name="message" id="message" placeholder="Your message *" rows="3"
-                                                class="form-control"></textarea>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-12">
-                                        <div class="send">
-                                            <a class="px-btn px-btn-white" href="mailto:mowmita.nipu14@gmail.com"
-                                                style="display:inline-block;text-decoration:none;">
-                                                <span>Contact Me</span>
-                                            </a>
-                                        </div>
-                                        <span id="suce_message" class="text-success" style="display: none">Message Sent
-                                            Successfully</span>
-                                        <span id="err_message" class="text-danger" style="display: none">Message Sending
-                                            Failed</span>
-                                    </div>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-                    <!-- Removed unnecessary black div here -->
-                </div>
             </div>
+        
+            <style>
+                .animate-spin-slow {
+                    animation: spin 15s linear infinite;
+                }
+                @keyframes spin {
+                    from { transform: rotate(0deg); }
+                    to { transform: rotate(360deg); }
+                }
+            </style>
         </section>
         <!-- End Contact -->
 
