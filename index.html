@@ -779,89 +779,254 @@
                 </div>
 
                 <!-- features section -->
-                <section class="w-full py-16 bg-gray-900 overflow-hidden relative">
+                <section class="w-full py-24 bg-gray-900 overflow-hidden relative" id="portfolio-banner">
     
-                    <div class="absolute top-0 left-0 w-20 h-full bg-gradient-to-r from-gray-900 to-transparent z-10"></div>
-                    <div class="absolute top-0 right-0 w-20 h-full bg-gradient-to-l from-gray-900 to-transparent z-10"></div>
+                    <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-pink-600/20 rounded-full blur-[120px] pointer-events-none"></div>
+                    <div class="absolute top-0 left-0 w-32 h-full bg-gradient-to-r from-gray-900 to-transparent z-10 pointer-events-none"></div>
+                    <div class="absolute top-0 right-0 w-32 h-full bg-gradient-to-l from-gray-900 to-transparent z-10 pointer-events-none"></div>
                 
-                    <div class="slider relative w-full h-[350px] overflow-hidden flex items-center">
-                        <div class="slide-track flex gap-4 w-[calc(200px*18)] hover:pause-animation">
+                    <div class="slider relative w-full h-[400px] flex items-center z-20">
+                        <div class="slide-track flex gap-6 w-[calc(220px*18)] hover:pause-animation slide-track-container">
                             
-                            <div class="slide w-[200px] h-[320px] rounded-xl overflow-hidden shadow-lg border border-gray-700 transform transition-transform duration-300 hover:scale-105 hover:border-pink-500">
-                                <img src="portfolio/features/feature1.jpg" alt="feature1" class="w-full h-full object-cover">
-                            </div>
-                            <div class="slide w-[200px] h-[320px] mt-8 rounded-xl overflow-hidden shadow-lg border border-gray-700 transform transition-transform duration-300 hover:scale-105 hover:border-pink-500">
-                                <img src="portfolio/features/feature2.png" alt="feature2" class="w-full h-full object-cover">
-                            </div>
-                            <div class="slide w-[200px] h-[320px] mt-4 rounded-xl overflow-hidden shadow-lg border border-gray-700 transform transition-transform duration-300 hover:scale-105 hover:border-pink-500">
-                                <img src="portfolio/features/feature3.jpg" alt="feature3" class="w-full h-full object-cover">
-                            </div>
-                            <div class="slide w-[200px] h-[320px] mt-6 rounded-xl overflow-hidden shadow-lg border border-gray-700 transform transition-transform duration-300 hover:scale-105 hover:border-pink-500">
-                                <img src="portfolio/features/feature4.png" alt="feature4" class="w-full h-full object-cover">
-                            </div>
-                            <div class="slide w-[200px] h-[320px] mt-2 rounded-xl overflow-hidden shadow-lg border border-gray-700 transform transition-transform duration-300 hover:scale-105 hover:border-pink-500">
-                                <img src="portfolio/features/feature5.png" alt="feature5" class="w-full h-full object-cover">
-                            </div>
-                            <div class="slide w-[200px] h-[320px] mt-5 rounded-xl overflow-hidden shadow-lg border border-gray-700 transform transition-transform duration-300 hover:scale-105 hover:border-pink-500">
-                                <img src="portfolio/features/feature6.png" alt="feature6" class="w-full h-full object-cover">
-                            </div>
-                            <div class="slide w-[200px] h-[320px] mt-8 rounded-xl overflow-hidden shadow-lg border border-gray-700 transform transition-transform duration-300 hover:scale-105 hover:border-pink-500">
-                                <img src="portfolio/features/feature7.jpg" alt="feature7" class="w-full h-full object-cover">
-                            </div>
-                            <div class="slide w-[200px] h-[320px] mt-3 rounded-xl overflow-hidden shadow-lg border border-gray-700 transform transition-transform duration-300 hover:scale-105 hover:border-pink-500">
-                                <img src="portfolio/features/feature8.jpg" alt="feature8" class="w-full h-full object-cover">
-                            </div>
-                            <div class="slide w-[200px] h-[320px] mt-7 rounded-xl overflow-hidden shadow-lg border border-gray-700 transform transition-transform duration-300 hover:scale-105 hover:border-pink-500">
-                                <img src="portfolio/features/feature9.png" alt="feature9" class="w-full h-full object-cover">
+                            <div class="slide group relative w-[220px] h-[340px] rounded-2xl overflow-hidden cursor-pointer border border-gray-800 hover:border-pink-500/50 transition-colors duration-300">
+                                <img src="portfolio/features/feature1.jpg" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                                <div class="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                                    <button class="view-design-btn text-white font-bold border border-white/50 px-5 py-2 rounded-full backdrop-blur-sm transform translate-y-4 group-hover:translate-y-0 transition-all duration-300 hover:bg-pink-600 hover:border-pink-600" data-img-src="portfolio/features/feature1.jpg">
+                                        View Design
+                                    </button>
+                                </div>
                             </div>
                 
-                            <div class="slide w-[200px] h-[320px] rounded-xl overflow-hidden shadow-lg border border-gray-700 transform transition-transform duration-300 hover:scale-105 hover:border-pink-500">
-                                <img src="portfolio/features/feature1.jpg" alt="feature1" class="w-full h-full object-cover">
-                            </div>
-                            <div class="slide w-[200px] h-[320px] mt-8 rounded-xl overflow-hidden shadow-lg border border-gray-700 transform transition-transform duration-300 hover:scale-105 hover:border-pink-500">
-                                <img src="portfolio/features/feature2.png" alt="feature2" class="w-full h-full object-cover">
-                            </div>
-                            <div class="slide w-[200px] h-[320px] mt-4 rounded-xl overflow-hidden shadow-lg border border-gray-700 transform transition-transform duration-300 hover:scale-105 hover:border-pink-500">
-                                <img src="portfolio/features/feature3.jpg" alt="feature3" class="w-full h-full object-cover">
-                            </div>
-                            <div class="slide w-[200px] h-[320px] mt-6 rounded-xl overflow-hidden shadow-lg border border-gray-700 transform transition-transform duration-300 hover:scale-105 hover:border-pink-500">
-                                <img src="portfolio/features/feature4.png" alt="feature4" class="w-full h-full object-cover">
-                            </div>
-                            <div class="slide w-[200px] h-[320px] mt-2 rounded-xl overflow-hidden shadow-lg border border-gray-700 transform transition-transform duration-300 hover:scale-105 hover:border-pink-500">
-                                <img src="portfolio/features/feature5.png" alt="feature5" class="w-full h-full object-cover">
-                            </div>
-                            <div class="slide w-[200px] h-[320px] mt-5 rounded-xl overflow-hidden shadow-lg border border-gray-700 transform transition-transform duration-300 hover:scale-105 hover:border-pink-500">
-                                <img src="portfolio/features/feature6.png" alt="feature6" class="w-full h-full object-cover">
-                            </div>
-                            <div class="slide w-[200px] h-[320px] mt-8 rounded-xl overflow-hidden shadow-lg border border-gray-700 transform transition-transform duration-300 hover:scale-105 hover:border-pink-500">
-                                <img src="portfolio/features/feature7.jpg" alt="feature7" class="w-full h-full object-cover">
-                            </div>
-                            <div class="slide w-[200px] h-[320px] mt-3 rounded-xl overflow-hidden shadow-lg border border-gray-700 transform transition-transform duration-300 hover:scale-105 hover:border-pink-500">
-                                <img src="portfolio/features/feature8.jpg" alt="feature8" class="w-full h-full object-cover">
-                            </div>
-                            <div class="slide w-[200px] h-[320px] mt-7 rounded-xl overflow-hidden shadow-lg border border-gray-700 transform transition-transform duration-300 hover:scale-105 hover:border-pink-500">
-                                <img src="portfolio/features/feature9.png" alt="feature9" class="w-full h-full object-cover">
+                            <div class="slide group relative w-[220px] h-[340px] mt-10 rounded-2xl overflow-hidden cursor-pointer border border-gray-800 hover:border-pink-500/50 transition-colors duration-300">
+                                <img src="portfolio/features/feature2.png" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                                <div class="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                                     <button class="view-design-btn text-white font-bold border border-white/50 px-5 py-2 rounded-full backdrop-blur-sm transform translate-y-4 group-hover:translate-y-0 transition-all duration-300 hover:bg-pink-600 hover:border-pink-600" data-img-src="portfolio/features/feature2.png">
+                                        View Design
+                                    </button>
+                                </div>
                             </div>
                 
+                            <div class="slide group relative w-[220px] h-[340px] mt-4 rounded-2xl overflow-hidden cursor-pointer border border-gray-800 hover:border-pink-500/50 transition-colors duration-300">
+                                <img src="portfolio/features/feature3.jpg" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                                <div class="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                                     <button class="view-design-btn text-white font-bold border border-white/50 px-5 py-2 rounded-full backdrop-blur-sm transform translate-y-4 group-hover:translate-y-0 transition-all duration-300 hover:bg-pink-600 hover:border-pink-600" data-img-src="portfolio/features/feature3.jpg">
+                                        View Design
+                                    </button>
+                                </div>
+                            </div>
+                
+                            <div class="slide group relative w-[220px] h-[340px] mt-8 rounded-2xl overflow-hidden cursor-pointer border border-gray-800 hover:border-pink-500/50 transition-colors duration-300">
+                                <img src="portfolio/features/feature4.png" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                                <div class="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                                     <button class="view-design-btn text-white font-bold border border-white/50 px-5 py-2 rounded-full backdrop-blur-sm transform translate-y-4 group-hover:translate-y-0 transition-all duration-300 hover:bg-pink-600 hover:border-pink-600" data-img-src="portfolio/features/feature4.png">
+                                        View Design
+                                    </button>
+                                </div>
+                            </div>
+                
+                            <div class="slide group relative w-[220px] h-[340px] mt-2 rounded-2xl overflow-hidden cursor-pointer border border-gray-800 hover:border-pink-500/50 transition-colors duration-300">
+                                <img src="portfolio/features/feature5.png" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                                <div class="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                                     <button class="view-design-btn text-white font-bold border border-white/50 px-5 py-2 rounded-full backdrop-blur-sm transform translate-y-4 group-hover:translate-y-0 transition-all duration-300 hover:bg-pink-600 hover:border-pink-600" data-img-src="portfolio/features/feature5.png">
+                                        View Design
+                                    </button>
+                                </div>
+                            </div>
+                
+                            <div class="slide group relative w-[220px] h-[340px] mt-6 rounded-2xl overflow-hidden cursor-pointer border border-gray-800 hover:border-pink-500/50 transition-colors duration-300">
+                                <img src="portfolio/features/feature6.png" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                                <div class="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                                     <button class="view-design-btn text-white font-bold border border-white/50 px-5 py-2 rounded-full backdrop-blur-sm transform translate-y-4 group-hover:translate-y-0 transition-all duration-300 hover:bg-pink-600 hover:border-pink-600" data-img-src="portfolio/features/feature6.png">
+                                        View Design
+                                    </button>
+                                </div>
+                            </div>
+                
+                            <div class="slide group relative w-[220px] h-[340px] mt-10 rounded-2xl overflow-hidden cursor-pointer border border-gray-800 hover:border-pink-500/50 transition-colors duration-300">
+                                <img src="portfolio/features/feature7.jpg" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                                <div class="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                                     <button class="view-design-btn text-white font-bold border border-white/50 px-5 py-2 rounded-full backdrop-blur-sm transform translate-y-4 group-hover:translate-y-0 transition-all duration-300 hover:bg-pink-600 hover:border-pink-600" data-img-src="portfolio/features/feature7.jpg">
+                                        View Design
+                                    </button>
+                                </div>
+                            </div>
+                
+                            <div class="slide group relative w-[220px] h-[340px] mt-3 rounded-2xl overflow-hidden cursor-pointer border border-gray-800 hover:border-pink-500/50 transition-colors duration-300">
+                                <img src="portfolio/features/feature8.jpg" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                                <div class="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                                     <button class="view-design-btn text-white font-bold border border-white/50 px-5 py-2 rounded-full backdrop-blur-sm transform translate-y-4 group-hover:translate-y-0 transition-all duration-300 hover:bg-pink-600 hover:border-pink-600" data-img-src="portfolio/features/feature8.jpg">
+                                        View Design
+                                    </button>
+                                </div>
+                            </div>
+                
+                            <div class="slide group relative w-[220px] h-[340px] mt-8 rounded-2xl overflow-hidden cursor-pointer border border-gray-800 hover:border-pink-500/50 transition-colors duration-300">
+                                <img src="portfolio/features/feature9.png" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                                <div class="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                                     <button class="view-design-btn text-white font-bold border border-white/50 px-5 py-2 rounded-full backdrop-blur-sm transform translate-y-4 group-hover:translate-y-0 transition-all duration-300 hover:bg-pink-600 hover:border-pink-600" data-img-src="portfolio/features/feature9.png">
+                                        View Design
+                                    </button>
+                                </div>
+                            </div>
+                
+                            <div class="slide group relative w-[220px] h-[340px] rounded-2xl overflow-hidden cursor-pointer border border-gray-800 hover:border-pink-500/50 transition-colors duration-300">
+                                <img src="portfolio/features/feature1.jpg" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                                <div class="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                                    <button class="view-design-btn text-white font-bold border border-white/50 px-5 py-2 rounded-full backdrop-blur-sm transform translate-y-4 group-hover:translate-y-0 transition-all duration-300 hover:bg-pink-600 hover:border-pink-600" data-img-src="portfolio/features/feature1.jpg">View Design</button>
+                                </div>
+                            </div>
+                            <div class="slide group relative w-[220px] h-[340px] mt-10 rounded-2xl overflow-hidden cursor-pointer border border-gray-800 hover:border-pink-500/50 transition-colors duration-300">
+                                <img src="portfolio/features/feature2.png" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                                <div class="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                                     <button class="view-design-btn text-white font-bold border border-white/50 px-5 py-2 rounded-full backdrop-blur-sm transform translate-y-4 group-hover:translate-y-0 transition-all duration-300 hover:bg-pink-600 hover:border-pink-600" data-img-src="portfolio/features/feature2.png">View Design</button>
+                                </div>
+                            </div>
+                            <div class="slide group relative w-[220px] h-[340px] mt-4 rounded-2xl overflow-hidden cursor-pointer border border-gray-800 hover:border-pink-500/50 transition-colors duration-300">
+                                <img src="portfolio/features/feature3.jpg" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                                <div class="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                                     <button class="view-design-btn text-white font-bold border border-white/50 px-5 py-2 rounded-full backdrop-blur-sm transform translate-y-4 group-hover:translate-y-0 transition-all duration-300 hover:bg-pink-600 hover:border-pink-600" data-img-src="portfolio/features/feature3.jpg">View Design</button>
+                                </div>
+                            </div>
+                             <div class="slide group relative w-[220px] h-[340px] mt-8 rounded-2xl overflow-hidden cursor-pointer border border-gray-800 hover:border-pink-500/50 transition-colors duration-300">
+                                <img src="portfolio/features/feature4.png" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                                <div class="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                                     <button class="view-design-btn text-white font-bold border border-white/50 px-5 py-2 rounded-full backdrop-blur-sm transform translate-y-4 group-hover:translate-y-0 transition-all duration-300 hover:bg-pink-600 hover:border-pink-600" data-img-src="portfolio/features/feature4.png">View Design</button>
+                                </div>
+                            </div>
+                            <div class="slide group relative w-[220px] h-[340px] mt-2 rounded-2xl overflow-hidden cursor-pointer border border-gray-800 hover:border-pink-500/50 transition-colors duration-300">
+                                <img src="portfolio/features/feature5.png" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                                <div class="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                                     <button class="view-design-btn text-white font-bold border border-white/50 px-5 py-2 rounded-full backdrop-blur-sm transform translate-y-4 group-hover:translate-y-0 transition-all duration-300 hover:bg-pink-600 hover:border-pink-600" data-img-src="portfolio/features/feature5.png">View Design</button>
+                                </div>
+                            </div>
+                            <div class="slide group relative w-[220px] h-[340px] mt-6 rounded-2xl overflow-hidden cursor-pointer border border-gray-800 hover:border-pink-500/50 transition-colors duration-300">
+                                <img src="portfolio/features/feature6.png" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                                <div class="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                                     <button class="view-design-btn text-white font-bold border border-white/50 px-5 py-2 rounded-full backdrop-blur-sm transform translate-y-4 group-hover:translate-y-0 transition-all duration-300 hover:bg-pink-600 hover:border-pink-600" data-img-src="portfolio/features/feature6.png">View Design</button>
+                                </div>
+                            </div>
+                            <div class="slide group relative w-[220px] h-[340px] mt-10 rounded-2xl overflow-hidden cursor-pointer border border-gray-800 hover:border-pink-500/50 transition-colors duration-300">
+                                <img src="portfolio/features/feature7.jpg" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                                <div class="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                                     <button class="view-design-btn text-white font-bold border border-white/50 px-5 py-2 rounded-full backdrop-blur-sm transform translate-y-4 group-hover:translate-y-0 transition-all duration-300 hover:bg-pink-600 hover:border-pink-600" data-img-src="portfolio/features/feature7.jpg">View Design</button>
+                                </div>
+                            </div>
+                            <div class="slide group relative w-[220px] h-[340px] mt-3 rounded-2xl overflow-hidden cursor-pointer border border-gray-800 hover:border-pink-500/50 transition-colors duration-300">
+                                <img src="portfolio/features/feature8.jpg" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                                <div class="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                                     <button class="view-design-btn text-white font-bold border border-white/50 px-5 py-2 rounded-full backdrop-blur-sm transform translate-y-4 group-hover:translate-y-0 transition-all duration-300 hover:bg-pink-600 hover:border-pink-600" data-img-src="portfolio/features/feature8.jpg">View Design</button>
+                                </div>
+                            </div>
+                            <div class="slide group relative w-[220px] h-[340px] mt-8 rounded-2xl overflow-hidden cursor-pointer border border-gray-800 hover:border-pink-500/50 transition-colors duration-300">
+                                <img src="portfolio/features/feature9.png" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                                <div class="absolute inset-0 bg-black/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+                                     <button class="view-design-btn text-white font-bold border border-white/50 px-5 py-2 rounded-full backdrop-blur-sm transform translate-y-4 group-hover:translate-y-0 transition-all duration-300 hover:bg-pink-600 hover:border-pink-600" data-img-src="portfolio/features/feature9.png">View Design</button>
+                                </div>
+                            </div>
+                
+                        </div>
+                    </div>
+                
+                    <div id="design-modal" class="fixed inset-0 z-[9999] hidden items-center justify-center p-4 md:p-8">
+                        <div class="modal-overlay absolute inset-0 bg-black/90 backdrop-blur-md opacity-0 transition-opacity duration-300"></div>
+                        
+                        <div class="modal-content relative w-full max-w-4xl max-h-[90vh] bg-gray-900/50 rounded-2xl overflow-hidden shadow-2xl border border-white/10 scale-95 opacity-0 transition-all duration-300 flex justify-center items-center p-2">
+                            <button id="close-modal-btn" class="absolute top-4 right-4 z-10 w-10 h-10 flex items-center justify-center rounded-full bg-black/50 text-white hover:bg-pink-600 transition-colors backdrop-blur-sm">
+                                <i class="bi bi-x-lg text-lg"></i>
+                            </button>
+                            
+                            <img id="modal-image" src="" alt="Design Preview" class="w-auto h-auto max-h-[85vh] max-w-full object-contain rounded-xl shadow-[0_0_30px_rgba(0,0,0,0.5)]">
                         </div>
                     </div>
                 
                     <style>
                         @keyframes scroll {
                             0% { transform: translateX(0); }
-                            100% { transform: translateX(calc(-200px * 9 - 1rem * 9)); } /* Move by half the track width */
+                            100% { transform: translateX(calc(-220px * 9 - 1.5rem * 9)); }
                         }
                 
                         .slide-track {
                             animation: scroll 40s linear infinite;
-                            width: calc(200px * 18 + 1rem * 18); /* Width of all slides + gaps */
+                            width: calc(220px * 18 + 1.5rem * 18);
                         }
                 
-                        /* Pause animation on hover */
                         .hover\:pause-animation:hover {
                             animation-play-state: paused;
                         }
+                
+                        /* Modal Open States */
+                        #design-modal.is-open {
+                            display: flex;
+                        }
+                        #design-modal.is-open .modal-overlay {
+                            opacity: 1;
+                        }
+                        #design-modal.is-open .modal-content {
+                            opacity: 1;
+                            transform: scale(1);
+                        }
                     </style>
+                
+                    <script>
+                        document.addEventListener('DOMContentLoaded', function() {
+                            const modal = document.getElementById('design-modal');
+                            const modalImage = document.getElementById('modal-image');
+                            const closeBtn = document.getElementById('close-modal-btn');
+                            const overlay = modal.querySelector('.modal-overlay');
+                            const sliderTrack = document.querySelector('.slide-track-container');
+                            
+                            // Select all view buttons (including duplicates)
+                            const viewButtons = document.querySelectorAll('.view-design-btn');
+                
+                            // Function to open modal
+                            function openModal(imgSrc) {
+                                modalImage.src = imgSrc;
+                                modal.classList.remove('hidden');
+                                // Small delay to trigger transition animation
+                                setTimeout(() => {
+                                    modal.classList.add('is-open');
+                                }, 10);
+                                // Optional: Pause slider when modal is open
+                                if (sliderTrack) sliderTrack.style.animationPlayState = 'paused';
+                                document.body.style.overflow = 'hidden'; // Disable background scroll
+                            }
+                
+                            // Function to close modal
+                            function closeModal() {
+                                modal.classList.remove('is-open');
+                                // Wait for transition to finish before hiding
+                                setTimeout(() => {
+                                    modal.classList.add('hidden');
+                                    modalImage.src = ''; // Clear image source
+                                    // Resume slider animation
+                                    if (sliderTrack) sliderTrack.style.animationPlayState = '';
+                                    document.body.style.overflow = ''; // Enable background scroll
+                                }, 300);
+                            }
+                
+                            // Add click event to all buttons
+                            viewButtons.forEach(btn => {
+                                btn.addEventListener('click', function(e) {
+                                    e.stopPropagation(); // Prevent bubbling
+                                    const imgSrc = this.getAttribute('data-img-src');
+                                    if (imgSrc) {
+                                        openModal(imgSrc);
+                                    }
+                                });
+                            });
+                
+                            // Close events
+                            closeBtn.addEventListener('click', closeModal);
+                            overlay.addEventListener('click', closeModal);
+                            
+                            // Close on Escape key
+                            document.addEventListener('keydown', function(e) {
+                                if (e.key === 'Escape' && modal.classList.contains('is-open')) {
+                                    closeModal();
+                                }
+                            });
+                        });
+                    </script>
                 </section>
 
                 <!-- Heading -->
