@@ -1725,46 +1725,145 @@
                 
                 </section>
 
-                <!-- Jacket Section -->
-                <section class="mt-16 w-full">
-                    <div class="w-full flex justify-start mb-2">
-                        <h1 class="text-2xl font-bold uppercase tracking-wider text-white bg-opacity-80 px-4 py-2 rounded-lg shadow-lg" style="background: none;">Jacket</h1>
+
+                <!-- Apparel Collection -->
+                <section class="w-full py-16 md:py-24 bg-gray-900 relative overflow-hidden" id="apparel-section">
+    
+                    <div class="absolute top-0 left-0 w-[500px] h-[500px] bg-indigo-600/10 rounded-full blur-[150px] pointer-events-none"></div>
+                    <div class="absolute bottom-0 right-0 w-[500px] h-[500px] bg-violet-600/10 rounded-full blur-[150px] pointer-events-none"></div>
+                    
+                    <div class="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] opacity-5 pointer-events-none"></div>
+                
+                    <div class="container mx-auto max-w-6xl relative z-10 px-4">
+                        
+                        <div class="text-center mb-16 md:mb-20">
+                            <div class="flex items-center justify-center gap-2 mb-3">
+                                <i class="bi bi-tag-fill text-indigo-500 text-lg"></i>
+                                <span class="text-indigo-500 font-bold tracking-[0.2em] text-xs uppercase">Garment Breakdown</span>
+                            </div>
+                            <h2 class="text-3xl md:text-6xl font-extrabold text-white uppercase tracking-tight">
+                                Apparel <span class="text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 to-violet-500">Collection</span>
+                            </h2>
+                            <div class="h-1 w-24 bg-gradient-to-r from-indigo-400 to-violet-500 mx-auto mt-4 rounded-full shadow-[0_0_15px_rgba(99,102,241,0.4)]"></div>
+                        </div>
+                
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-16 md:gap-y-24">
+                            
+                            <div class="relative group cursor-zoom-in perspective-1000" onclick="openApparelModal(this)">
+                                <div class="absolute -top-6 left-1/2 -translate-x-1/2 z-30 bg-gray-800 text-white px-6 py-2 rounded-full border border-indigo-500/50 shadow-lg transform transition-transform duration-300 group-hover:-translate-y-2">
+                                    <span class="font-bold tracking-widest text-sm uppercase">Jacket</span>
+                                </div>
+                                <div class="relative bg-white p-2 md:p-3 rounded-xl shadow-[0_20px_40px_rgba(0,0,0,0.5)] transition-all duration-500 transform group-hover:-translate-y-2 group-hover:rotate-1 z-20 border border-gray-100">
+                                    <div class="relative overflow-hidden rounded-lg border border-gray-100">
+                                        <div class="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-all duration-300 z-10 flex items-center justify-center">
+                                            <i class="bi bi-arrows-fullscreen text-white text-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-300 drop-shadow-lg"></i>
+                                        </div>
+                                        <img src="./Jacket.jpg" alt="Jacket" class="w-full h-auto object-cover">
+                                    </div>
+                                </div>
+                                <div class="absolute top-3 left-3 w-full h-full bg-indigo-900/30 rounded-xl -z-10 transform rotate-2 transition-transform duration-500 group-hover:rotate-3 hidden md:block"></div>
+                            </div>
+                
+                            <div class="relative group cursor-zoom-in perspective-1000 md:mt-12" onclick="openApparelModal(this)">
+                                <div class="absolute -top-6 left-1/2 -translate-x-1/2 z-30 bg-gray-800 text-white px-6 py-2 rounded-full border border-violet-500/50 shadow-lg transform transition-transform duration-300 group-hover:-translate-y-2">
+                                    <span class="font-bold tracking-widest text-sm uppercase">Hoodie</span>
+                                </div>
+                                <div class="relative bg-white p-2 md:p-3 rounded-xl shadow-[0_20px_40px_rgba(0,0,0,0.5)] transition-all duration-500 transform group-hover:-translate-y-2 group-hover:-rotate-1 z-20 border border-gray-100">
+                                    <div class="relative overflow-hidden rounded-lg border border-gray-100">
+                                        <div class="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-all duration-300 z-10 flex items-center justify-center">
+                                            <i class="bi bi-arrows-fullscreen text-white text-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-300 drop-shadow-lg"></i>
+                                        </div>
+                                        <img src="./Hoodie...jpg" alt="Hoodie" class="w-full h-auto object-cover">
+                                    </div>
+                                </div>
+                                <div class="absolute top-3 right-3 w-full h-full bg-violet-900/30 rounded-xl -z-10 transform -rotate-2 transition-transform duration-500 group-hover:-rotate-3 hidden md:block"></div>
+                            </div>
+                
+                            <div class="relative group cursor-zoom-in perspective-1000" onclick="openApparelModal(this)">
+                                <div class="absolute -top-6 left-1/2 -translate-x-1/2 z-30 bg-gray-800 text-white px-6 py-2 rounded-full border border-indigo-500/50 shadow-lg transform transition-transform duration-300 group-hover:-translate-y-2">
+                                    <span class="font-bold tracking-widest text-sm uppercase">Pants</span>
+                                </div>
+                                <div class="relative bg-white p-2 md:p-3 rounded-xl shadow-[0_20px_40px_rgba(0,0,0,0.5)] transition-all duration-500 transform group-hover:-translate-y-2 group-hover:rotate-1 z-20 border border-gray-100">
+                                    <div class="relative overflow-hidden rounded-lg border border-gray-100">
+                                        <div class="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-all duration-300 z-10 flex items-center justify-center">
+                                            <i class="bi bi-arrows-fullscreen text-white text-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-300 drop-shadow-lg"></i>
+                                        </div>
+                                        <img src="./pant.jpg" alt="Pants" class="w-full h-auto object-cover">
+                                    </div>
+                                </div>
+                                <div class="absolute top-3 left-3 w-full h-full bg-indigo-900/30 rounded-xl -z-10 transform rotate-2 transition-transform duration-500 group-hover:rotate-3 hidden md:block"></div>
+                            </div>
+                
+                            <div class="relative group cursor-zoom-in perspective-1000 md:mt-12" onclick="openApparelModal(this)">
+                                <div class="absolute -top-6 left-1/2 -translate-x-1/2 z-30 bg-gray-800 text-white px-6 py-2 rounded-full border border-violet-500/50 shadow-lg transform transition-transform duration-300 group-hover:-translate-y-2">
+                                    <span class="font-bold tracking-widest text-sm uppercase">Shorts</span>
+                                </div>
+                                <div class="relative bg-white p-2 md:p-3 rounded-xl shadow-[0_20px_40px_rgba(0,0,0,0.5)] transition-all duration-500 transform group-hover:-translate-y-2 group-hover:-rotate-1 z-20 border border-gray-100">
+                                    <div class="relative overflow-hidden rounded-lg border border-gray-100">
+                                        <div class="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-all duration-300 z-10 flex items-center justify-center">
+                                            <i class="bi bi-arrows-fullscreen text-white text-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-300 drop-shadow-lg"></i>
+                                        </div>
+                                        <img src="./shorts.jpg" alt="Shorts" class="w-full h-auto object-cover">
+                                    </div>
+                                </div>
+                                <div class="absolute top-3 right-3 w-full h-full bg-violet-900/30 rounded-xl -z-10 transform -rotate-2 transition-transform duration-500 group-hover:-rotate-3 hidden md:block"></div>
+                            </div>
+                
+                        </div>
                     </div>
-                    <div class="relative w-full flex justify-center items-center">
-                        <img src="./Jacket.jpg" alt="Jacket" class="w-full h-auto max-w-4xl rounded-2xl shadow-2xl object-contain mb-8" />
+                
+                    <div id="apparel-modal" class="fixed inset-0 z-[9999] hidden items-center justify-center p-0 bg-black/95 backdrop-blur-md opacity-0 transition-opacity duration-300" onclick="closeApparelModal()">
+                        
+                        <button class="absolute top-4 right-4 md:top-6 md:right-6 z-[100] w-12 h-12 flex items-center justify-center rounded-full bg-gray-800/80 text-white border border-white/20 hover:bg-indigo-600 hover:border-indigo-500 transition-all shadow-lg cursor-pointer">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                            </svg>
+                        </button>
+                
+                        <div class="relative w-full h-full flex items-center justify-center p-2 md:p-4">
+                            <img src="" class="max-w-[95vw] md:max-w-full max-h-[90vh] md:max-h-full object-contain rounded-lg shadow-2xl scale-95 transition-transform duration-300" id="apparel-full-img">
+                        </div>
                     </div>
+                
+                    <script>
+                        const appModal = document.getElementById('apparel-modal');
+                        const appFullImg = document.getElementById('apparel-full-img');
+                
+                        function openApparelModal(element) {
+                            const img = element.querySelector('img');
+                            if (img) {
+                                appFullImg.src = img.src;
+                                appModal.classList.remove('hidden');
+                                setTimeout(() => {
+                                    appModal.classList.remove('opacity-0');
+                                    appFullImg.classList.remove('scale-95');
+                                    appFullImg.classList.add('scale-100');
+                                }, 10);
+                                document.body.style.overflow = 'hidden';
+                            }
+                        }
+                
+                        function closeApparelModal() {
+                            appModal.classList.add('opacity-0');
+                            appFullImg.classList.remove('scale-100');
+                            appFullImg.classList.add('scale-95');
+                            setTimeout(() => {
+                                appModal.classList.add('hidden');
+                                appFullImg.src = '';
+                                document.body.style.overflow = '';
+                            }, 300);
+                        }
+                
+                        document.addEventListener('keydown', function(e) {
+                            if (e.key === 'Escape' && !appModal.classList.contains('hidden')) {
+                                closeApparelModal();
+                            }
+                        });
+                    </script>
+                
                 </section>
 
-                <!-- Hoodie Section -->
-                <section class="mt-16 w-full">
-                    <div class="w-full flex justify-start mb-2">
-                        <h1 class="text-2xl font-bold uppercase tracking-wider text-white bg-opacity-80 px-4 py-2 rounded-lg shadow-lg" style="background: none;">Hoodie</h1>
-                    </div>
-                    <div class="relative w-full flex justify-center items-center">
-                        <img src="./Hoodie...jpg" alt="Hoodie" class="w-full h-auto max-w-4xl rounded-2xl shadow-2xl object-contain mb-8" />
-                    </div>
-                </section>
-
-                <!-- Pants Section -->
-                <section class="mt-16 w-full">
-                    <div class="w-full flex justify-start mb-2">
-                        <h1 class="text-2xl font-bold uppercase tracking-wider text-white bg-opacity-80 px-4 py-2 rounded-lg shadow-lg" style="background: none;">Pants</h1>
-                    </div>
-                    <div class="relative w-full flex justify-center items-center">
-                        <img src="./pant.jpg" alt="Pants" class="w-full h-auto max-w-4xl rounded-2xl shadow-2xl object-contain mb-8" />
-                    </div>
-                </section>
-
-                <!-- Shorts Section -->
-                <section class="mt-16 w-full">
-                    <div class="w-full flex justify-start mb-2">
-                        <h1 class="text-2xl font-bold uppercase tracking-wider text-white bg-opacity-80 px-4 py-2 rounded-lg shadow-lg" style="background: none;">Shorts</h1>
-                    </div>
-                    <div class="relative w-full flex justify-center items-center">
-                        <img src="./shorts.jpg" alt="Shorts" class="w-full h-auto max-w-4xl rounded-2xl shadow-2xl object-contain mb-8" />
-                    </div>
-                </section>
-
+                
                 <!-- 3D Design Section -->
                 <section class="mt-16 w-full">
                     <div class="w-full flex justify-start mb-2">
