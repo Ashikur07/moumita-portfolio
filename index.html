@@ -260,30 +260,27 @@
                 <a href="https://wa.me/8801314557057" target="_blank" rel="noopener" aria-label="WhatsApp">
                     <i class="bi bi-whatsapp"></i>
                 </a>
-                <a href="https://www.instagram.com/mowmita_nipu?igsh=eWFnbTE4bXN5eHdy" target="_blank" rel="noopener"
-                    aria-label="Instagram">
+                <a href="https://www.instagram.com/mowmita_nipu?igsh=eWFnbTE4bXN5eHdy" target="_blank" rel="noopener" aria-label="Instagram">
                     <i class="bi bi-instagram"></i>
                 </a>
-                <a href="https://www.linkedin.com/in/mowmita-nipu-3a0a202b3/" target="_blank" rel="noopener"
-                    aria-label="LinkedIn">
+                <a href="https://www.linkedin.com/in/mowmita-nipu-3a0a202b3/" target="_blank" rel="noopener" aria-label="LinkedIn">
                     <i class="bi bi-linkedin"></i>
                 </a>
             </div>
-
-            <!-- Removed hero background text -->
-            </div>
+        
             <div class="container">
-                <div class="row min-vh-100 align-items-center hero-row-gap-fix">
-
+                <div class="row min-vh-100 align-items-center hero-row-gap-fix px-lg-5">
+        
                     <div class="col-lg-6">
                         <style>
+                            /* Mobile & Tablet Spacing Fixes */
                             @media (max-width: 991.98px) {
                                 .hero-row-gap-fix {
                                     margin-top: 56px !important;
                                     padding-top: 0 !important;
                                 }
                             }
-
+        
                             @media (max-width: 575.98px) {
                                 .hero-row-gap-fix {
                                     margin-top: 44px !important;
@@ -295,8 +292,7 @@
                             <h6>Hi There, I'm</h6>
                             <h1 class="font-alt">Mowmita Akter <br>Nipu</h1>
                             <h2><span id="type-it"></span></h2>
-                            <p>Passionate about creating stunning looks as a Fashion Designer and Makeup Artist. I blend
-                                creativity and style to help you express your unique beauty and confidence.</p>
+                            <p>Passionate about creating stunning looks as a Fashion Designer and Makeup Artist. I blend creativity and style to help you express your unique beauty and confidence.</p>
                             <div class="btn-bar">
                                 <div style="margin-top: 18px; display: flex; gap: 12px;">
                                     <a class="px-btn px-btn-white" href="#contactus">Contact Me</a>
@@ -310,12 +306,13 @@
                                 </div>
                             </div>
                         </div>
+                        
                         <script>
-                            // Simple typewriter effect for #type-it
                             document.addEventListener('DOMContentLoaded', function () {
                                 const words = ['Fashion Designer', 'Makeup Artist'];
                                 let i = 0, j = 0, isDeleting = false, current = '';
                                 const el = document.getElementById('type-it');
+                                
                                 function type() {
                                     const word = words[i % words.length];
                                     if (!isDeleting) {
@@ -341,6 +338,7 @@
                                 type();
                             });
                         </script>
+                        
                         <style>
                             .blinking-cursor {
                                 font-weight: 100;
@@ -348,51 +346,40 @@
                                 color: #e11d48;
                                 animation: blink 1s step-end infinite;
                             }
-
                             @keyframes blink {
-
-                                from,
-                                to {
-                                    opacity: 1;
-                                }
-
-                                50% {
-                                    opacity: 0;
-                                }
+                                from, to { opacity: 1; }
+                                50% { opacity: 0; }
                             }
                         </style>
                     </div>
-
-                    <div class="col-lg-6 ">
+        
+                    <div class="col-lg-6">
                         <div class="home-avatar-box">
                             <div class="home-avatar-in">
                                 <img src="static/img/home-banner.png" title="" alt="">
                             </div>
                         </div>
-                        <div class="social-share nav d-flex d-lg-none justify-content-center mt-3 mt-md-4 mt-lg-5"
-                            style="margin-top: 48px;">
-                            <a href="https://www.facebook.com/mowmita.nipu.10" target="_blank" rel="noopener"
-                                aria-label="Facebook">
+                        
+                        <div class="social-share nav d-flex d-lg-none justify-content-center mt-3 mt-md-4 mt-lg-5" style="margin-top: 48px;">
+                            <a href="https://www.facebook.com/mowmita.nipu.10" target="_blank" rel="noopener" aria-label="Facebook">
                                 <i class="bi bi-facebook"></i>
                             </a>
                             <a href="https://wa.me/8801314557057" target="_blank" rel="noopener" aria-label="WhatsApp">
                                 <i class="bi bi-whatsapp"></i>
                             </a>
-                            <a href="https://www.instagram.com/mowmita_nipu?igsh=eWFnbTE4bXN5eHdy" target="_blank"
-                                rel="noopener" aria-label="Instagram">
+                            <a href="https://www.instagram.com/mowmita_nipu?igsh=eWFnbTE4bXN5eHdy" target="_blank" rel="noopener" aria-label="Instagram">
                                 <i class="bi bi-instagram"></i>
                             </a>
-                            <a href="https://www.linkedin.com/in/mowmita-nipu-3a0a202b3/" target="_blank" rel="noopener"
-                                aria-label="LinkedIn">
+                            <a href="https://www.linkedin.com/in/mowmita-nipu-3a0a202b3/" target="_blank" rel="noopener" aria-label="LinkedIn">
                                 <i class="bi bi-linkedin"></i>
                             </a>
                         </div>
+        
                         <style>
                             @media (max-width: 575.98px) {
                                 .home-avatar-box {
                                     max-width: 90% !important;
                                 }
-
                                 .home-avatar-box img {
                                     width: 90% !important;
                                     height: auto !important;
@@ -400,22 +387,20 @@
                                     margin-left: auto;
                                     margin-right: auto;
                                 }
-
                                 .social-share.nav.d-flex.d-lg-none {
                                     font-size: 1.35rem;
-                                    margin-top: 408px !important;
+                                    margin-top: 30px !important; /* Adjusted for better mobile spacing */
                                 }
-
                                 .social-share.nav.d-flex.d-lg-none a {
-                                    margin: 5 8px;
+                                    margin: 0 8px;
                                 }
                             }
                         </style>
                     </div>
-
+        
                 </div>
             </div>
-
+        
             <div class="bottom-ani dark-text-1">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 40" preserveAspectRatio="none">
                     <path fill="currentColor" d="">
@@ -427,9 +412,8 @@
                     </path>
                 </svg>
             </div>
-
+        
         </section>
-
         <!-- End section -->
 
         <!-- About Us -->
@@ -526,6 +510,8 @@
             </div>
         </section>
         <!-- End About Us -->
+
+
         <!-- Services -->
         <section id="services" data-scroll-index="2" class="section services-section">
             <div class="placeholder">
@@ -625,6 +611,7 @@
             </div>
         </section>
         <!-- End Services -->
+
         <!-- Resume -->
         <section class="section section-resume dark-bg-1">
             <div class="placeholder">
